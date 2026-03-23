@@ -44,5 +44,7 @@ vim.g.clipboard = {
 
 vim.schedule(function()
     -- vim.cmd("colorscheme base")
-    vim.cmd("colorscheme tokyonight-night")
+    -- vim.cmd("colorscheme tokyonight-night")
+    -- vim.cmd("colorscheme gruvbox")
+    vim.cmd("colorscheme nightfox")
 end)

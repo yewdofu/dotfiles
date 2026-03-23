@@ -1,4 +1,5 @@
 require("config.nvim")
 require("config.lazy")
+require("config.gruvbox")
 require("config.keymap")
 require("config.lsp")
