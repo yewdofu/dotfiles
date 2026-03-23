@@ -1,4 +1,8 @@
-require("lsp.gopls")
+local lsp_dir = vim.fn.stdpath("config") .. "/lua/lsp"
+for _, file in ipairs(vim.fn.glob(lsp_dir .. "/*.lua", false, true)) do
+  local name = vim.fn.fnamemodify(file, ":t:r")
+  require("lsp." .. name)
+end
 
 vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(ev)
