@@ -1,0 +1,20 @@
+[general]
+live_config_reload = true
+
+[cursor]
+style = "Beam"
+
+[env]
+TERM = "tmux-256color"
+
+[terminal.shell]
+program = "/usr/bin/tmux"
+args = ["new-session", "-A", "-s", "main"]
+
+[font]
+size = 15.0
+offset.x = 0
+offset.y = 0
+
+[font.normal]
+family = "Sarasa Fixed J Nerd Font"

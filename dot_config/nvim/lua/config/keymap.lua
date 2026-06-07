@@ -14,3 +14,5 @@ vim.keymap.set("n", "<leader>sd", function()
     vim.diagnostic.open_float()
 end)
 
+vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { desc = "LSP Code Actions" })
+
